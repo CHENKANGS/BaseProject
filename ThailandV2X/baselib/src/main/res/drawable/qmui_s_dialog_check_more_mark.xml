@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 单选类型的对话框的单选Drawable -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<item android:drawable="@mipmap/icon_slt" android:state_selected="true"/>-->
+    <!--<item android:drawable="@mipmap/icon_slt" android:state_checked="true"/>-->
+    <!--<item android:drawable="@color/qmui_config_color_transparent"/>-->
+
+    <item android:drawable="@mipmap/ic_slt_more" android:state_checked="true" />
+    <item android:drawable="@mipmap/ic_not_more" android:state_checked="false"/>
+
+    <!--<item android:drawable="@mipmap/icon_slt" android:state_selected="true"/>-->
+    <!--<item android:drawable="@mipmap/icon_slt" android:state_checked="true"/>-->
+    <!--<item android:drawable="@color/qmui_config_color_transparent"/>-->
+
+</selector>

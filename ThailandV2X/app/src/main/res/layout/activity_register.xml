@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_login_back" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="@string/register_title_msg"
+            android:textColor="@color/main_bg"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <EditText
+            android:id="@+id/register_userName_et"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/edittext_cursor_bg"
+            android:drawableLeft="@mipmap/icon_login_phone"
+            android:drawablePadding="5dp"
+            android:hint="@string/register_userName_msg"
+            android:inputType="number"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/main_bg"
+            android:textColorHint="@color/gray_hint"
+            android:textSize="14sp" />
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/register_password_et"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/edittext_cursor_bg"
+                android:drawableLeft="@mipmap/icon_login_password"
+                android:drawablePadding="5dp"
+                android:hint="@string/register_psd_msg"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/main_bg"
+                android:textColorHint="@color/gray_hint"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/register_openPsd_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:src="@mipmap/icon_login_psd_open" />
+        </LinearLayout>
+
+        <View style="@style/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/register_password1_et"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textCursorDrawable="@drawable/edittext_cursor_bg"
+                android:drawableLeft="@mipmap/icon_login_password"
+                android:drawablePadding="5dp"
+                android:hint="@string/register_re_psd_msg"
+                android:inputType="textPassword"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/main_bg"
+                android:textColorHint="@color/gray_hint"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/register_openPsd1_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:src="@mipmap/icon_login_psd_open" />
+        </LinearLayout>
+
+        <View style="@style/line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/register_des_msg"
+            android:textColor="@color/main_bg"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_height="wrap_content">-->
+            <RadioButton
+                android:id="@+id/register_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@drawable/register_radio_selector_bg"
+                android:checked="false" />
+            <!--</RadioGroup>-->
+            <TextView
+                android:id="@+id/register_privacy_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/register_privacy_msg"
+                android:textColor="@color/main_bg"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/register_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_selector_bg"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:text="@string/register_next_msg"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

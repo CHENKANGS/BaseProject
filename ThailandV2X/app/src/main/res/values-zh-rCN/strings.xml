@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="test_title">标题</string>
+    <string name="logining_msg">正在登录</string>
+    <string name="logining_userName_msg">输入手机号码</string>
+    <string name="logining_psd_msg">输入密码</string>
+    <string name="logining_login_msg">登 录</string>
+    <string name="logining_register_msg">注册</string>
+    <string name="logining_forgot_psd_msg">忘记密码</string>
+    <string name="register_userName_msg">输入手机号码</string>
+    <string name="register_psd_msg">输入密码</string>
+    <string name="register_re_psd_msg">再次输入密码</string>
+    <string name="register_des_msg">密码为6-20个字母或数字</string>
+    <string name="register_privacy_msg">我已阅读并同意《用户协议及隐私政策》</string>
+    <string name="register_next_msg">下一步</string>
+    <string name="register_title_msg">新用户注册</string>
+    <string name="verify_title_msg">验证</string>
+    <string name="verify_title_des_msg">验证码已发送到：</string>
+    <string name="verify_code_msg">输入验证码</string>
+    <string name="verify_btn_msg">验证</string>
+    <string name="forgot_phone_title_msg">验证手机号</string>
+    <string name="forgot_phone_hint_msg">输入手机号码</string>
+    <string name="forgot_phone_next_msg">下一步</string>
+
+    <string name="main_home_msg">首页</string>
+    <string name="main_carCondition_msg">车况</string>
+    <string name="main_mine_msg">我的</string>
+
+</resources>

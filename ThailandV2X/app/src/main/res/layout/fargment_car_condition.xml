@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/gradual_color_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+        <com.intest.thailand.v2x.widget.ClockView
+            android:id="@+id/clock_view"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_height="wrap_content"
+            app:text_title_dial="完成率"
+            />
+        <com.intest.thailand.v2x.widget.ClockView
+            android:id="@+id/clock_view2"
+            android:layout_width="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:text_title_dial="完成率"/>
+    </LinearLayout>
+
+
+</LinearLayout>

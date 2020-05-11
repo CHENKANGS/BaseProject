@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/item_car_logo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_home_smalllogo" />
+
+        <TextView
+            android:id="@+id/item_car_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/item_car_logo_iv"
+            android:text="ceshi"
+            android:textColor="@color/gray_666666"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/item_car_down_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/item_car_name_tv"
+            android:src="@mipmap/icon_home_smalllogo" />
+    </RelativeLayout>
+
+    <View style="@style/line" />
+
+</LinearLayout>

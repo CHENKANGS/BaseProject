@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="PermissionBackround" format="reference"></attr>
+    <attr name="PermissionTitleColor" format="color"></attr>
+    <attr name="PermissionMsgColor" format="color"></attr>
+    <attr name="PermissionItemTextColor" format="color"></attr>
+    <attr name="PermissionButtonTextColor" format="color"></attr>
+    <attr name="PermissionButtonBackground" format="reference"></attr>
+    <attr name="PermissionBgFilterColor" format="color"></attr>
+    <attr name="PermissionIconFilterColor" format="color"></attr>
+
+
+    <declare-styleable name="SyncViewPager">
+        <attr name="velocity" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="FollowBehavior">
+        <attr name="target" format="reference"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color"/>
+        <attr name="pstsUnderlineColor" format="color"/>
+        <attr name="pstsDividerColor" format="color"/>
+        <attr name="pstsIndicatorHeight" format="dimension"/>
+        <attr name="pstsUnderlineHeight" format="dimension"/>
+        <attr name="pstsDividerPadding" format="dimension"/>
+        <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+        <attr name="pstsScrollOffset" format="dimension"/>
+        <attr name="pstsTabBackground" format="reference"/>
+        <attr name="pstsShouldExpand" format="boolean"/>
+        <attr name="pstsTextAllCaps" format="boolean"/>
+        <attr name="pstsSelectTextColor" format="color"/>
+    </declare-styleable>
+</resources>

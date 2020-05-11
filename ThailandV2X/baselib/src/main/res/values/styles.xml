@@ -1,0 +1,242 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryDark">@color/analysis_bg</item>
+        <item name="colorAccent">@color/main</item>
+    </style>
+
+    <!--设置全屏并隐藏状态栏-->
+    <style name="AppTheme.NoBar">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="AppTheme.startTheme"  parent="QMUI.Compat.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        将splash图片设置在这，这样这张图片取代白屏
+        <item name="android:windowBackground">@mipmap/icon_start</item>
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!-- 或者是将主题设置成透明，虽然点击图标会有点小小的卡顿，但是用户体验不影响 -->
+        <!--<item name="android:windowIsTranslucent">true</item>    &lt;!&ndash;//透明背景不要了 &ndash;&gt;-->
+    </style>
+
+    <!--首页-->
+    <style name="MainTheme" parent="BaseAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+        <!--<item name="android:windowTranslucentNavigation">true</item>-->
+    </style>
+
+    <style name="BaseAppTheme" parent="QMUI.Compat.NoActionBar">
+        <item name="colorPrimary">@color/main</item>
+        <item name="colorPrimaryDark">@color/main</item>
+        <item name="colorAccent">@color/analysis_bg</item>
+
+        <!-- 配置Android提供的theme -->
+        <item name="android:textAppearanceListItemSmall">@style/QDTextAppearanceListItemSmall</item>
+        <item name="android:textAppearanceListItem">@style/QDtextAppearanceListItem</item>
+        <item name="android:listPreferredItemHeight">?attr/qmui_list_item_height_higher</item>
+        <item name="android:listPreferredItemHeightSmall">?attr/qmui_list_item_height</item>
+
+        <!-- 配置qmui提供的theme -->
+        <item name="qmui_config_color_blue">@color/app_color_blue</item>
+        <item name="qmui_topbar_title_color">@color/qmui_config_color_white</item>
+        <item name="qmui_topbar_subtitle_color">@color/qmui_config_color_white</item>
+        <item name="qmui_topbar_text_btn_color_state_list">@color/s_topbar_btn_color</item>
+        <item name="qmui_topbar_height">48dp</item>
+        <item name="qmui_topbar_image_btn_height">48dp</item>
+        <item name="qmui_round_btn_bg_color">@color/s_btn_blue_bg</item>
+        <item name="qmui_round_btn_border_color">@color/s_btn_blue_border</item>
+        <item name="qmui_round_btn_text_color">@color/s_btn_blue_text</item>
+        <item name="qmui_content_spacing_horizontal">20dp</item>
+        <item name="qmui_content_padding_horizontal">@dimen/qmui_content_spacing_horizontal</item>
+
+        <item name="QMUITopBarStyle">@style/QDTopBar</item>
+
+        <!-- 配置app自己的theme -->
+        <item name="app_primary_color">?attr/qmui_config_color_blue</item>
+        <item name="app_content_bg_color">@color/qmui_config_color_white</item>
+
+    </style>
+
+    <style name="QDTextAppearanceListItemSmall">
+        <item name="android:textColor">?attr/qmui_config_color_gray_4</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">?attr/qmui_s_list_item_bg_with_border_bottom_inset_left
+        </item>
+    </style>
+    <style name="QDtextAppearanceListItem">
+        <item name="android:textColor">?attr/qmui_config_color_black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">?attr/qmui_s_list_item_bg_with_border_bottom_inset_left
+        </item>
+    </style>
+
+    <style name="QDCommonTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:textColor">?attr/qmui_config_color_gray_1</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="QDCommonDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/app_color_description</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="QDTopBar" parent="QMUI.TopBar">
+        <item name="qmui_topbar_bg_color">?attr/app_primary_color</item>
+    </style>
+
+    <style name="QDRadiusButton" parent="@style/Button">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">?attr/qmui_content_spacing_horizontal</item>
+        <item name="android:paddingRight">?attr/qmui_content_spacing_horizontal</item>
+        <!--<item name="android:background">@drawable/s_radius_button_bg</item>-->
+        <item name="android:textColor">@color/s_app_color_blue_2</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="button_wrapper_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:background">@drawable/qmui_divider_bottom_bitmap</item>
+    </style>
+
+<!--&lt;!&ndash;项目里面的&ndash;&gt;-->
+    <!--<style name="line">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">0.5dp</item>-->
+        <!--<item name="android:background">@color/line_gray</item>-->
+    <!--</style>-->
+    <!--<style name="line_bg">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">10dp</item>-->
+        <!--<item name="android:background">@color/white_f1</item>-->
+    <!--</style>-->
+
+
+    <style name="AppTheme.NoAction.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoAction.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+<!--权限-->
+    <style name="notAnimation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="CustomTheme_Dialog" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/notAnimation</item>
+    </style>
+    <style name="PermissionBaseWhiteStyle">
+        <item name="PermissionTitleColor">@color/permissionColorWhite</item>
+        <item name="PermissionMsgColor">@color/permissionColorWhite</item>
+        <item name="PermissionItemTextColor">@color/permissionColorWhite</item>
+        <item name="PermissionButtonTextColor">@color/permissionColorWhite</item>
+        <item name="PermissionIconFilterColor">@color/permissionColorWhite</item>
+    </style>
+
+    <style name="PermissionDefaultNormalStyle" >
+        <item name="PermissionTitleColor">#737373</item>
+        <item name="PermissionMsgColor">#737373</item>
+        <item name="PermissionItemTextColor">#737373</item>
+        <item name="PermissionButtonBackground">@drawable/shape_btn_next</item>
+        <item name="PermissionBackround">@drawable/shape_bg_white</item>
+        <item name="PermissionButtonTextColor">@android:color/white</item>
+    </style>
+
+    <style name="PermissionDefaultGreenStyle" parent="PermissionBaseWhiteStyle">
+        <item name="PermissionButtonBackground">@drawable/shape_btn_green_light</item>
+        <item name="PermissionBackround">@drawable/permission_card1</item>
+        <item name="PermissionBgFilterColor">@color/permissionBgColorGreenLight</item>
+    </style>
+
+    <style name="PermissionDefaultBlueStyle" parent="PermissionBaseWhiteStyle">
+        <item name="PermissionButtonBackground">@drawable/shape_btn_border_white</item>
+        <item name="PermissionBackround">@drawable/shape_btn_blue</item>
+    </style>
+
+    <style name="PermissionAnimFade">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="PermissionAnimScale">
+        <item name="android:windowEnterAnimation">@anim/scale_in</item>
+        <item name="android:windowExitAnimation">@anim/scale_out</item>
+    </style>
+
+    <style name="PermissionAnimModal">
+        <item name="android:windowEnterAnimation">@anim/modal_in</item>
+        <item name="android:windowExitAnimation">@anim/modal_out</item>
+    </style>
+
+    <!--字段分割线颜色-->
+    <!--<style name="line_1111111111">-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_height">1dp</item>-->
+        <!--<item name="android:background">@color/line_gray</item>-->
+    <!--</style>-->
+
+
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <!--<style name="AlertDialogStyle" parent="Theme.AppCompat.Light.Dialog">-->
+    <style name="AlertDialogStyle" parent="android:Theme.Dialog">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!--是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!--边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!--模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!--<style name="QMUI.Dialog" parent="android:Theme.Dialog">-->
+        <!--<item name="android:windowBackground">@color/qmui_config_color_transparent</item>-->
+        <!--<item name="android:windowNoTitle">true</item>&lt;!&ndash; 不用window title，使用自己的layout来做title &ndash;&gt;-->
+        <!--&lt;!&ndash; <item name="android:windowTitleStyle">@style/dialog_title</item> &ndash;&gt;&lt;!&ndash; 不用设置windowStyleStyle，因为windowNoTitle=true &ndash;&gt;-->
+        <!--<item name="android:windowIsFloating">true</item>&lt;!&ndash; 在中间弹框、背后有遮罩的效果 &ndash;&gt;-->
+        <!--<item name="android:minWidth">?attr/qmui_dialog_min_width</item>-->
+        <!--<item name="android:layout_width">match_parent</item>-->
+        <!--<item name="android:layout_marginLeft">?attr/qmui_dialog_margin_horizontal</item>-->
+        <!--<item name="android:layout_marginRight">?attr/qmui_dialog_margin_horizontal</item>-->
+    <!--</style>-->
+
+</resources>

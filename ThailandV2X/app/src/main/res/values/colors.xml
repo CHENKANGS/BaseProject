@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--全局用色-->
+    <color name="main_bg">#00a46c</color>
+    <color name="line_gray">#dbdfdc</color>
+    <color name="white">#ffffff</color>
+    <color name="white_f1">#f1f1f1</color>
+    <color name="gray_hint">#ababab</color>
+    <color name="gray_666666">#666666</color>
+    <color name="code_ff5e39">#ff5e39</color>
+    <!--渐变色才是用下面两个-->
+    <color name="main_26a36c">#26a36c</color>
+    <color name="main_5ec866">#5ec866</color>
+    <!---->
+
+
+
+    <color name="gray_21b9bc">#21b9bc</color>
+    <color name="gray_1b1b1b">#1b1b1b</color>
+    <color name="gray_text_c8">#c8c8c8</color>
+    <color name="gray_text_99">#999999</color>
+    <color name="text_blue">#C2CEF3</color>
+    <color name="transparent3">#90000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red_bg">#f66662</color>
+    <color name="yellow_bg">#f09e47</color>
+    <color name="green_bg">#21b9bc</color>
+
+</resources>
